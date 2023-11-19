@@ -1,0 +1,121 @@
+.popular {
+  background-color: #f8f8f8;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+  &__cards {
+    @include center-item;
+    padding-top: 40px;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    @include for-tablet {
+      justify-content: center;
+      gap: 20px;
+    }
+    @include for-phone {
+      justify-content: center;
+    }
+  }
+  &__cards__shashlik:hover {
+    box-shadow: 3px 3px 3px 3px #0000005a;
+    cursor: pointer;
+    transform: scale(1.08, 1.08);
+  }
+  &__cards__shashlik {
+    background-color: $white_color;
+    max-width: 310px;
+    width: 100%;
+    border-radius: 14px;
+    padding: 10px;
+    box-shadow: 3px 3px 3px 3px #0000001a;
+    transition: 1s ease;
+
+    &__img {
+      max-width: 270px;
+      width: 100%;
+      object-fit: cover;
+    }
+    &__text {
+      max-width: 270px;
+      width: 100%;
+      font-family: $OpenSans_font;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24.51px;
+      text-align: center;
+      padding-top: 10px;
+      color: $text_color;
+      @include for-tablet {
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+    &__stars {
+      padding: 20px 90px;
+      @include for-phone {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+    &__title {
+      color: $primary_color;
+      font-family: $OpenSans-Bold;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32.68px;
+      text-align: center;
+      padding-bottom: 40px;
+      @include for-tablet {
+        font-weight: 600;
+        font-size: 22px;
+      }
+      @include for-phone {
+        font-weight: 500;
+        font-size: 20px;
+      }
+    }
+  }
+  &__img {
+    position: absolute;
+    top: 94%;
+    right: 7%;
+    @include for-phone {
+      top: 95%;
+      left: 35%;
+    }
+  }
+  &__title {
+    max-width: 357px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 3%;
+    color: $primary_color;
+    @include for-phone {
+      max-width: 400px;
+      width: 100%;
+      padding-bottom: 20px;
+      font-weight: 400;
+      font-size: 34px;
+      line-height: 44px;
+      letter-spacing: 2%;
+      text-align: center;
+    }
+  }
+  &__span {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include for-phone {
+      display: block;
+    }
+  }
+}
+
+// .spanImg {
+//   max-width: 100px;
+//   width: 100%;
+//   margin: 0 auto;
+// }

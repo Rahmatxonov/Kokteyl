@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="secondary_container">
+          <div class="navbar">
+            <a href="./index.html">
+              <img src="./images/icons/logo.svg" alt="logo" />
+            </a>
+            <ul class="navbar__menu">
+              <li class="navbar__menu__item">
+                <a class="navbar__menu__link" href="#">Menu</a>
+              </li>
+              <li class="navbar__menu__item">
+                <a class="navbar__menu__link" href="#">News</a>
+              </li>
+              <li class="navbar__menu__item">
+                <a class="navbar__menu__link" href="#">About Us</a>
+              </li>
+              <li class="navbar__menu__item">
+                <a class="navbar__menu__link" href="#">Contact Us</a>
+              </li>
+              <button class="navbar__menu__btn">Log In</button>
+            </ul>
+            <img
+              id="navbar__img__addBurger"
+              src="./images/add.png"
+              alt="added burger"
+            />
+            <i class="fa-solid fa-xmark" id="removeburger"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="secondary_container">
+          <div class="hero__menu">
+            <div class="hero__menu__left">
+              <p class="hero__menu__left__chase">Chase the new Flavour</p>
+              <h1 class="hero__menu__left__title">The key to Fine dining</h1>
+              <p class="hero__menu__left__text">
+                Sit tellus lobortis sed senectus vivamus molestie. Condimentum
+                volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
+                aliquam amet tellus
+              </p>
+              <button class="hero__menu__left__btn">Explore Menu</button>
+            </div>
+            <img
+              class="hero__menu__img"
+              src="./images/header_img.png"
+              alt="shashlik"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container-three">
+        <img class="scroll" src="./images/icons/Scroll.svg" alt="scroll" />
+      </div>
+    </header>
+    <main>
+      <div class="popular">
+        <div class="container">
+          <span class="popular__span">
+            <h2 class="popular__title">Popular Dishes</h2>
+            <img class="spanImg" src="./images/icons/str.svg" alt="str" />
+          </span>
+          <div class="popular__cards">
+            <div class="popular__cards__shashlik">
+              <img
+                class="popular__cards__shashlik__img"
+                src="./images/shashlik.jpg"
+                alt="shashlik"
+              />
+              <p class="popular__cards__shashlik__text">
+                Barbecue Shish kebab Shashlik Skewer
+              </p>
+              <img
+                class="popular__cards__shashlik__stars"
+                src="./images/icons/star.svg"
+                alt="stars"
+              />
+              <h3 class="popular__cards__shashlik__title">$12.00</h3>
+            </div>
+            <div class="popular__cards__shashlik">
+              <img
+                class="popular__cards__shashlik__img"
+                src="./images/pitsa.jpg"
+                alt="pitsa"
+              />
+              <p class="popular__cards__shashlik__text">
+                Barbecue Shish kebab Shashlik Skewer
+              </p>
+              <img
+                class="popular__cards__shashlik__stars"
+                src="./images/icons/star.svg"
+                alt="stars"
+              />
+              <h3 class="popular__cards__shashlik__title">$12.00</h3>
+            </div>
+            <div class="popular__cards__shashlik">
+              <img
+                class="popular__cards__shashlik__img"
+                src="./images/gamburger.jpg"
+                alt="gamburger"
+              />
+              <p class="popular__cards__shashlik__text">
+                Barbecue Shish kebab Shashlik Skewer
+              </p>
+              <img
+                class="popular__cards__shashlik__stars"
+                src="./images/icons/star.svg"
+                alt="stars"
+              />
+              <h3 class="popular__cards__shashlik__title">$12.00</h3>
+            </div>
+            <div class="popular__cards__shashlik">
+              <img
+                class="popular__cards__shashlik__img"
+                src="./images/fri.jpg"
+                alt="fri"
+              />
+              <p class="popular__cards__shashlik__text">
+                Barbecue Shish kebab Shashlik Skewer
+              </p>
+              <img
+                class="popular__cards__shashlik__stars"
+                src="./images/icons/star.svg"
+                alt="stars"
+              />
+              <h3 class="popular__cards__shashlik__title">$12.00</h3>
+            </div>
+          </div>
+          <img
+            class="popular__img"
+            src="./images/icons/qaychi.svg"
+            alt="qaychi"
+          />
+        </div>
+      </div>
+      <div class="regular">
+        <div class="container-three">
+          <h2 class="regular__title">Our Regular Menu Pack</h2>
+          <button id="sortButton">Sort Cocktails</button>
+          <div class="regular__buttons">
+            <button class="regular__buttons__btn">All</button>
+            <button class="regular__buttons__btn">Shawarma</button>
+            <button class="regular__buttons__btn">Turk Kebab</button>
+            <button class="regular__buttons__btn">Hamburger Kebab</button>
+            <button class="regular__buttons__btn">Doner kebab</button>
+            <button class="regular__buttons__btn">Shish kebab</button>
+            <button class="regular__buttons__btn">French fries Pizza</button>
+            <button class="regular__buttons__btn">Desserts</button>
+          </div>
+          <div class="regular__card"></div>
+        </div>
+      </div>
+      <div class="customers">
+        <div class="container">
+          <div class="customers__info">
+            <h4 class="customers__info__title">Testimony</h4>
+            <!-- <img
+              class="customers__info__img"
+              src="./images/icons/Vector.svg"
+              alt="vector"
+            /> -->
+            <h2 class="customers__info__happy">Happy customers</h2>
+          </div>
+          <div class="customers__cards">
+            <div class="customers__card">
+              <h3 class="customers__card__title">Maria</h3>
+              <p class="customers__card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor
+                sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit.
+                Nulla scelerisque scelerisq...
+              </p>
+              <div class="customers__card__data">
+                <span>
+                  <img
+                    class="ustomers__card__data__img"
+                    src="./images/icons/calendar.svg"
+                    alt="calendar"
+                  />
+                  <span class="customers__card__data__span">06/02/2022</span>
+                </span>
+                <span>
+                  <img
+                    class="customers__card__data__img2"
+                    src="./images/icons/clock.svg"
+                    alt="clock"
+                  />
+                  <span class="customers__card__data__span">11:15</span>
+                </span>
+                <span>
+                  <img
+                    class="customers__card__data__img3"
+                    src="./images/icons/eye.svg"
+                    alt="eye"
+                  />
+                  <span class="customers__card__data__span">222</span>
+                </span>
+              </div>
+            </div>
+            <div class="customers__card">
+              <h3 class="customers__card__title">Maria</h3>
+              <p class="customers__card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor
+                sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit.
+                Nulla scelerisque scelerisq...
+              </p>
+              <div class="customers__card__data">
+                <span>
+                  <img
+                    class="ustomers__card__data__img"
+                    src="./images/icons/calendar.svg"
+                    alt="calendar"
+                  />
+                  <span class="customers__card__data__span">06/02/2022</span>
+                </span>
+                <span>
+                  <img
+                    class="customers__card__data__img2"
+                    src="./images/icons/clock.svg"
+                    alt="clock"
+                  />
+                  <span class="customers__card__data__span">11:15</span>
+                </span>
+                <span>
+                  <img
+                    class="customers__card__data__img3"
+                    src="./images/icons/eye.svg"
+                    alt="eye"
+                  />
+                  <span class="customers__card__data__span">222</span>
+                </span>
+              </div>
+            </div>
+            <div class="customers__card">
+              <h3 class="customers__card__title">Maria</h3>
+              <p class="customers__card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor
+                sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit.
+                Nulla scelerisque scelerisq...
+              </p>
+              <div class="customers__card__data">
+                <span>
+                  <img
+                    class="ustomers__card__data__img"
+                    src="./images/icons/calendar.svg"
+                    alt="calendar"
+                  />
+                  <span class="customers__card__data__span">06/02/2022</span>
+                </span>
+                <span>
+                  <img
+                    class="customers__card__data__img2"
+                    src="./images/icons/clock.svg"
+                    alt="clock"
+                  />
+                  <span class="customers__card__data__span">11:15</span>
+                </span>
+                <span>
+                  <img
+                    class="customers__card__data__img3"
+                    src="./images/icons/eye.svg"
+                    alt="eye"
+                  />
+                  <span class="customers__card__data__span">222</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <span class="list">
+            <img src="./images/icons/list.svg" alt="list" />
+          </span>
+          <img
+            class="cus-qaychi"
+            src="./images/icons/qaychi.svg"
+            alt="qaychi"
+          />
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

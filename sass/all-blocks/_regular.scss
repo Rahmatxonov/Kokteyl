@@ -1,0 +1,110 @@
+.regular {
+  padding-top: 76px;
+  &__card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+    padding-top: 60px;
+    gap: 20px;
+    @include for-tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include for-phone {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    @include for-tablet {
+      gap: 20px;
+      justify-content: center;
+    }
+
+    &__btn {
+      background: transparent;
+      padding: 10px 36px 10px 36px;
+      border: 1px solid $primary_color;
+      border-radius: 100px;
+      color: $text_color;
+      font-family: $OpenSans_font;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 5%;
+      transition: 1s ease;
+    }
+    &__btn:hover {
+      border: 3px solid $white_color;
+      cursor: pointer;
+      color: $white_color;
+      background: $primary_color;
+    }
+  }
+  &__title {
+    max-width: 550px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 3%;
+    color: $primary_color;
+  }
+}
+.FoodImage {
+  width: 100%;
+  height: 250px;
+  border-top-right-radius: 14px;
+  border-top-left-radius: 14px;
+  object-fit: cover;
+}
+
+.FoodId {
+  text-align: center;
+  color: red;
+  padding-top: 20px;
+}
+.FoodTitle {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+.readMore {
+  background: transparent;
+  border: none;
+  color: blue;
+  padding: 10px;
+}
+.card {
+  box-shadow: 3px 3px 3px 3px #0000001a;
+  transition: 1s ease;
+  border-radius: 14px;
+}
+.card:hover {
+  box-shadow: 3px 3px 3px 3px #0000005a;
+  cursor: pointer;
+  transform: scale(1.08, 1.08);
+}
+#sortButton {
+  background: transparent;
+  padding: 10px 36px 10px 36px;
+  border: 1px solid $primary_color;
+  border-radius: 100px;
+  color: $text_color;
+  font-family: $OpenSans_font;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 5%;
+  transition: 1s ease;
+  margin-top: 30px;
+}
+#sortButton:hover {
+  border: 3px solid $white_color;
+  cursor: pointer;
+  color: $white_color;
+  background: $primary_color;
+}

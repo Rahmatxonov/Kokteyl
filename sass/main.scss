@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+@import "./all-blocks/fonts";
+@import "./all-blocks/mixins";
+@import "./all-blocks/variables";
+
+body {
+  overflow-x: hidden;
+  font-family: $primary_font;
+}
+.container {
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.secondary_container {
+  max-width: 1980px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.container-three {
+  max-width: 1405px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+@import "./all-blocks/navbar";
+@import "./all-blocks/headers";
+@import "./all-blocks/footer";
+@import "./all-blocks/popular";
+@import "./all-blocks/regular";
+@import "./all-blocks/customers";

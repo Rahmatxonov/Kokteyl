@@ -1,0 +1,93 @@
+.customers {
+  position: relative;
+  &__cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 60px;
+  }
+  background: #f4f4f4;
+  margin-top: 120px;
+  &__info {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    &__title {
+      padding-top: 100px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 23px;
+      line-height: 30px;
+      letter-spacing: 4%;
+      color: $text_color;
+    }
+    &__happy {
+      width: 100%;
+      text-align: center;
+      font-family: $Regular;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 63px;
+      letter-spacing: 3%;
+      color: $text_color;
+    }
+  }
+  &__card {
+    background: $white_color;
+    padding: 30px 50px 30px 20px;
+    max-width: 410px;
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 3px 3px 3px 3px #0000001a;
+    &__title {
+      max-width: 66px;
+      width: 100%;
+      font-family: $Inter_font;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 26px;
+      color: $card_text_color;
+    }
+    &__text {
+      max-width: 340px;
+      width: 100%;
+      opacity: 70%;
+      font-family: $Inter_font;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: $card_text_color;
+      padding-top: 10px;
+    }
+    &__data {
+      display: flex;
+      align-items: center;
+      column-gap: 15px;
+      opacity: 50%;
+      padding-top: 21px;
+      &__span {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+}
+span {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.list {
+  padding-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 96px;
+}
+.cus-qaychi {
+  position: absolute;
+  top: 93%;
+  right: 10%;
+}

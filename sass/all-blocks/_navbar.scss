@@ -1,0 +1,97 @@
+.navbar {
+  @include center-item;
+  padding: 27px 0 27px 0;
+  &__menu {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    @include for-tablet {
+      column-gap: 28px;
+    }
+    @include for-phone {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      position: absolute;
+      top: 72px;
+      left: 0;
+      background-color: $primary_color;
+      max-width: 250px;
+      width: 100%;
+      row-gap: 24px;
+      transform: translateX(-300px);
+      transition: 1s ease-in-out;
+      z-index: 3;
+      height: 250px;
+    }
+    &__link {
+      text-decoration: none;
+      color: $white_color;
+      font-family: $OpenSans_font;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21.79px;
+      letter-spacing: 4%;
+      @include for-tablet {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 3%;
+      }
+      @include for-phone {
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 2%;
+      }
+    }
+    &__btn {
+      background: transparent;
+      padding: 10px 40px 10px 40px;
+      border: 1px solid $white_color;
+      border-radius: 100px;
+      color: $white_color;
+      font-family: $OpenSans_font;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 5%;
+      transition: 1s ease;
+
+      @include for-tablet {
+        padding: 5px 20px 5px 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 3%;
+      }
+      @include for-phone {
+        display: none;
+      }
+    }
+    &__btn:hover {
+      border: 3px solid $primary_color;
+      cursor: pointer;
+      color: $primary_color;
+      background: $white_color;
+    }
+  }
+}
+#navbar__img__addBurger {
+  display: none;
+  width: 25px;
+  @include for-phone {
+    display: flex;
+  }
+}
+
+#removeburger {
+  display: none;
+  font-size: 25px;
+  color: white;
+}
+
+.show {
+  transform: translateX(0);
+  // visibility: hidden;
+}

@@ -1,0 +1,143 @@
+header {
+  background-color: $primary_color;
+  padding-bottom: 300px;
+  position: relative;
+  @include for-tablet {
+    background-image: url(../../images/header_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+  }
+}
+
+.hero__menu {
+  @include center-item;
+  &__left {
+    padding-top: 98px;
+    @include for-tablet {
+      padding-top: 78px;
+    }
+    @include for-phone {
+      padding-top: 64px;
+    }
+    &__chase {
+      max-width: 300px;
+      width: 100%;
+      font-weight: 700;
+      font-size: 23px;
+      line-height: 30px;
+      letter-spacing: 4%;
+      color: $white_color;
+      text-transform: capitalize;
+      @include for-tablet {
+        backdrop-filter: blur(20px);
+        border-radius: 100px;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 3%;
+        text-align: center;
+      }
+      @include for-phone {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+    &__title {
+      max-width: 555px;
+      width: 100%;
+      font-weight: 700;
+      font-size: 90px;
+      line-height: 117px;
+      letter-spacing: 4%;
+      text-transform: capitalize;
+      color: $white_color;
+      padding-top: 25px;
+      @include for-tablet {
+        backdrop-filter: blur(5px);
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 90px;
+        letter-spacing: 3%;
+        border-radius: 100px;
+        margin-top: 20px;
+        padding: 20px;
+        text-align: center;
+      }
+      @include for-phone {
+        letter-spacing: 2%;
+        font-size: 52px;
+        line-height: 70px;
+        font-weight: 500;
+      }
+    }
+    &__text {
+      max-width: 500px;
+      width: 100%;
+      opacity: 70%;
+      font-family: $OpenSans_font;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 4%;
+      color: $white_color;
+      padding-top: 20px;
+      padding-bottom: 38px;
+      @include for-tablet {
+        backdrop-filter: blur(20px);
+        border-radius: 100px;
+        padding: 10px;
+        text-align: center;
+        margin-top: 20px;
+        opacity: 85%;
+      }
+    }
+    &__btn {
+      background: transparent;
+      padding: 10px 40px 10px 40px;
+      border: 1px solid $white_color;
+      border-radius: 100px;
+      color: $white_color;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 4%;
+      transition: 1s ease;
+      @include for-tablet {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 3%;
+        margin-top: 40px;
+      }
+      @include for-phone {
+        width: 100%;
+      }
+    }
+    &__btn:hover {
+      border: 3px solid $primary_color;
+      cursor: pointer;
+      color: $primary_color;
+      background: $white_color;
+    }
+  }
+  &__img {
+    max-width: 724px;
+    width: 100%;
+    height: 601px;
+    padding-top: 83px;
+    @include for-tablet {
+      display: none;
+    }
+  }
+}
+.scroll {
+  position: absolute;
+  top: 85%;
+  right: 2%;
+  @include for-tablet {
+    display: none;
+  }
+}
